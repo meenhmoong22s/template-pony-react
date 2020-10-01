@@ -1,0 +1,16 @@
+.main-navbar {
+  .navbar {
+    background-color: #801336 !important;
+    color: #fff;
+    a {
+      color: #fff;
+    }
+  }
+  .navbar-nav .dropdown-menu {
+    background-color: #801336;
+    text-align: center;
+    & > div {
+      padding: 10px 0;
+    }
+  }
+}

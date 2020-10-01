@@ -1,1 +1,21 @@
 @import "home.scss";
+@import "navbar.scss";
+@import "login.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+
+  // display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: auto;
+  background-image: linear-gradient(160deg, #ee4540, #c72c41, #801336, #2d132c);
+}
