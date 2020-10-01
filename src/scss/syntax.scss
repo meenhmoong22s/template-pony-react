@@ -1,0 +1,58 @@
+$font-stack: Helvetica, sans-serif;
+$primary-color: rgb(49, 141, 30);
+
+@import "./children"; // sau khi @import thi co the su dung CAC BIEN, CAC KHOI SCSS tu file import, CAC @mixin
+// @use 'children';
+
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url("./assets/font/Roboto/Roboto-Medium.ttf");
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Roboto-Medium";
+
+  // display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+  .child {
+    font: 100% $font-stack;
+    color: $primary-color;
+    background-color: $backgroud-color; // sau khi @import children thi App co the su dung duoc CAC BIEN tu children
+
+    @include transform(
+      rotate(30deg)
+    ); // cu phap @include de truyen tham so vao @mixin
+    padding: 1.4em;
+  }
+  .child_1 {
+    @extend .child;
+    // padding: 1.4em; // khong cong don padding cua khoi dc @extend
+  }
+  .child_2 {
+    @extend .child;
+
+    cursor: pointer;
+    ul {
+      list-style: none;
+      font-size: 22px;
+    }
+  }
+}
