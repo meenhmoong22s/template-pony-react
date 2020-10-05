@@ -1,17 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./scss/index.scss";
-import App from "./App";
-import * as serviceWorker from "./serviceWorker";
-import "bootstrap/dist/css/bootstrap.min.css";
+import { Provider } from "react-redux";
 
+import App from "./App";
+import store from "./redux/redux-store/store";
+
+import "./scss/index.scss";
+import * as serviceWorker from "./serviceWorker";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 ReactDOM.render(
-  // <React.StrictMode>
-  //   <App />
-  // </React.StrictMode>,
-  <React.Fragment>
+  <Provider store={store}>
     <App />
-  </React.Fragment>,
+  </Provider>,
   document.getElementById("root")
 );
 

@@ -8,6 +8,10 @@ npm start
 
 npm i --save-dev node-sass
 
+## install reduxjs/toolkit react-redux
+
+npm i --save @reduxjs/toolkit react-redux
+
 ## install routing-dom
 
 npm i --save react-router-dom
@@ -31,8 +35,10 @@ function App() {
 ## Custom Field
 
 Formik
-
+npm install formik --save
 Yup
+npm install -S yup
+import \* as yup from 'yup'; // for everything
 
 - Cầu nối giữa UI control và Formik.
 - UI control là một controlled component với props:
@@ -67,7 +73,13 @@ function InputField(props) {
 npm install bootstrap --save
 npm i --save reactstrap
 
+## font awsome
+
+npm install --save @fortawesome/fontawesome-free
+
 ### deploy sever free
+
+npm install --global surge
 
 -Build reactjs app with production mode
 npm run build
