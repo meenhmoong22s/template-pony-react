@@ -9,7 +9,7 @@ const Loading = React.lazy(() => import("../container/loading"));
 
 function Router(props) {
   return (
-    <div style={{ height: "100vh" }}>
+    <div style={{ height: "100vh", position: "relative", marginTop: "56px" }}>
       <Switch>
         <Redirect exact from="/" to="/login" />
         <Route path="/home" component={Home} />

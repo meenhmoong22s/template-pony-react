@@ -14,10 +14,11 @@
   width: 100%;
   height: 100%;
 
-  // display: flex;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
+
   margin: auto;
   background-image: linear-gradient(160deg, #ee4540, #c72c41, #801336, #2d132c);
+  position: relative;
 }

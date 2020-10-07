@@ -1,28 +1,29 @@
-import { ErrorMessage } from "formik";
 import React from "react";
 import { FormFeedback, FormGroup, Input, Label } from "reactstrap";
+import { ErrorMessage } from "formik";
 
 const InputFiled = (props) => {
   // get value of props from Fastfiled
   const { field, form, type, label, placeholder, disabled } = props;
-  console.log(type);
+  // console.log(type);
   //   console.log(disabled);
   // get init from field
-  const { name } = field; //, value, onChange, onBlur
+  const { name, value, onChange, onBlur } = field; //, value, onChange, onBlur
   const { errors, touched } = form;
   const showErrors = errors[name] && touched[name];
+
   return (
     <FormGroup className="form-label-group">
       <Input
         id={name}
         //props of Formik
-        // name={name}
-        // value = {value}
-        // onChange = {onChange}
-        // onBlur = {onBlur}
+        name={name}
+        value={value}
+        onChange={onChange}
+        onBlur={onBlur}
         //----------------
         //fast syntax
-        {...field}
+        // {...field}
         //
         className="form-control"
         type={type}

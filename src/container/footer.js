@@ -2,7 +2,10 @@ import React from "react";
 
 const Footer = (props) => {
   return (
-    <footer className="page-footer font-small cyan darken-3">
+    <footer
+      className="page-footer font-small cyan darken-3"
+      style={{ position: "relative" }}
+    >
       <div className="container">
         <div className="row">
           <div className="col-md-12 py-5">

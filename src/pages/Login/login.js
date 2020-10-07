@@ -5,7 +5,6 @@ import { useHistory } from "react-router-dom";
 import * as yup from "yup"; // for everything
 import InputFiled from "../../customs/inputFiled";
 import SelectFiled from "../../customs/selectFiled";
-
 import { addPhoto } from "../../redux/redux-slice/photoSlice";
 
 const category = [
@@ -37,9 +36,9 @@ const Login = (props) => {
   });
 
   const handleSubmit = (values) => {
-    console.log("Submit:", values);
+    // console.log("Submit:", values);
     const action = addPhoto(values);
-    console.log(action);
+    // console.log(action);
     dispatch(action);
     history.push("/home");
   };
@@ -59,7 +58,7 @@ const Login = (props) => {
                 {(formikProps) => {
                   // xu ly form...
                   const { values, errors, touched } = formikProps;
-                  console.log({ values, errors, touched });
+                  // console.log({ values, errors, touched });
                   return (
                     //by Form of Formik
                     <Form className="form-signin">
