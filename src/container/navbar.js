@@ -1,6 +1,6 @@
 import React, { useState } from "react";
+import { useDispatch } from "react-redux";
 import { NavLink } from "react-router-dom";
-
 import {
   Collapse,
   DropdownMenu,
@@ -8,11 +8,9 @@ import {
   Nav,
   Navbar,
   NavbarBrand,
-  NavbarToggler,
   NavItem,
   UncontrolledDropdown,
 } from "reactstrap";
-import { useDispatch } from "react-redux";
 import { setModal } from "../redux/redux-slice/modalSlice";
 
 const NavBar = () => {

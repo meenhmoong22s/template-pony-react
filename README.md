@@ -12,6 +12,10 @@ npm i --save-dev node-sass
 
 npm i --save @reduxjs/toolkit react-redux
 
+## install axios call api
+
+npm i axios
+
 ## install routing-dom
 
 npm i --save react-router-dom

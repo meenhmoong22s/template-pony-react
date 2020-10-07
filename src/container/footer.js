@@ -7,22 +7,46 @@ const Footer = (props) => {
         <div className="row">
           <div className="col-md-12 py-5">
             <div className="mb-5 text-center">
-              <a href="https://www.facebook.com/" target="_blank">
-                <i className="fab fa-facebook-f fa-lg  mr-md-5 mr-3 fa-2x"></i>{" "}
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fab fa-facebook-f fa-lg  mr-md-5 mr-3 fa-2x"></i>
               </a>
-              <a href="https://twitter.com/?lang=vi" target="_blank">
+              <a
+                href="https://twitter.com/?lang=vi"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="fab fa-twitter fa-lg  mr-md-5 mr-3 fa-2x"></i>
               </a>
-              <a href="https://www.google.com/" target="_blank">
+              <a
+                href="https://www.google.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="fab fa-google-plus-g fa-lg  mr-md-5 mr-3 fa-2x"></i>
               </a>
-              <a href="https://www.linkedin.com/feed/" target="_blank">
+              <a
+                href="https://www.linkedin.com/feed/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="fab fa-linkedin-in fa-lg  mr-md-5 mr-3 fa-2x"></i>
               </a>
-              <a href="https://www.instagram.com/" target="_blank">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="fab fa-instagram fa-lg  mr-md-5 mr-3 fa-2x"></i>
               </a>
-              <a href="https://www.pinterest.com/" target="_blank">
+              <a
+                href="https://www.pinterest.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="fab fa-pinterest fa-lg  fa-2x"> </i>
               </a>
             </div>

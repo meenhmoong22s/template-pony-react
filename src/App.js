@@ -1,4 +1,4 @@
-import React, { Suspense, useEffect, useRef, useState } from "react";
+import React, { Suspense } from "react";
 import { BrowserRouter } from "react-router-dom";
 import Footer from "./container/footer";
 import Loading from "./container/loading";

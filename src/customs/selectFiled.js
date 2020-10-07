@@ -6,8 +6,8 @@ import { FormFeedback, FormGroup, Label } from "reactstrap";
 const SelectFiled = (props) => {
   const { field, form, options, label, placeholder, disabled } = props;
   const { name, value } = field;
-  console.log(value);
-  console.log(options);
+  // console.log(value);
+  // console.log(options);
   const selectedOption = options.find((option) => option.value === value);
   const handleSelectOpitonChange = (selectedOption) => {
     const selectedValue = selectedOption

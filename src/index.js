@@ -4,11 +4,12 @@ import { Provider } from "react-redux";
 
 import App from "./App";
 import store from "./redux/redux-store/store";
+import * as serviceWorker from "./serviceWorker";
 
 import "./scss/index.scss";
-import * as serviceWorker from "./serviceWorker";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+
 ReactDOM.render(
   <Provider store={store}>
     <App />
